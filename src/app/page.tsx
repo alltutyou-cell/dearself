@@ -78,8 +78,8 @@ export default function Home() {
             </RevealText>
             <FadeIn delay={0.3}>
               <p className="mt-8 text-base md:text-lg text-ink-soft leading-relaxed max-w-md">
-                You&apos;ve been writing letters into the void for years. She
-                heard all of it. This is her writing back.
+                You&apos;ve been writing to yourself in your head for years.
+                Tomorrow morning, she says it back. In your voice.
               </p>
             </FadeIn>
           </div>
