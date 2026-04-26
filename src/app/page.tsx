@@ -1207,7 +1207,20 @@ export default function Home() {
                 </div>
               </FadeIn>
 
-              <FadeIn delay={0.5}>
+              {/* Handwritten signature — Julia's actual hand. The page is a letter; this is its sign-off. */}
+              <FadeIn delay={0.45}>
+                <div className="mt-12">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/images/logo-handwritten.png"
+                    alt="my dear self"
+                    className="block w-72 md:w-96 h-auto select-none pointer-events-none -ml-3"
+                    draggable={false}
+                  />
+                </div>
+              </FadeIn>
+
+              <FadeIn delay={0.6}>
                 <div className="mt-20 flex flex-col md:flex-row items-start gap-6">
                   <span data-cursor-label="claim it →">
                     <MagneticLink
