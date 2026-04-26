@@ -1,26 +1,253 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Color palette — moodier, less generic */
+  --color-bone: #e8e5d5;        /* Primary background — warm bone, slight olive */
+  --color-bone-soft: #f1eddf;   /* Lighter bg variant */
+  --color-ink: #1a1815;         /* Deep ink — primary text + dark sections */
+  --color-ink-soft: #2a2520;    /* Slightly softer ink for body */
+  --color-sage: #5b6b4a;        /* Olive sage — accent + alternating bg */
+  --color-sage-deep: #43503a;   /* Deeper sage for hover */
+  --color-earth: #a8634c;       /* Burnt earth — accent (replaces gold) */
+  --color-earth-deep: #864e3c;  /* Deeper earth for hover */
+  --color-oxblood: #5c2828;     /* Rare contrast moments */
+
+  /* Fonts */
+  --font-display: var(--font-schrifted);
+  --font-display-sub: var(--font-schrifted-sub);
+  --font-display-alt: var(--font-arsenica);
+  --font-display-c: var(--font-gagen);
+  --font-body: var(--font-machina);
+  --font-mono: var(--font-fliege);
+  --font-display-bold: var(--font-magnat);
+  --font-body-alt: var(--font-craftwork);
+
+  /* Type scale */
+  --text-display-xl: clamp(3.5rem, 9vw, 7.5rem);
+  --text-display-lg: clamp(2.25rem, 5.5vw, 4.5rem);
+  --text-display-md: clamp(1.5rem, 3.2vw, 2.5rem);
+  --text-display-sm: clamp(1.25rem, 2.2vw, 1.75rem);
+
+  --color-background: var(--color-bone);
+  --color-foreground: var(--color-ink);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bone);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-earth);
+  color: var(--color-bone);
+}
+
+/* Subtle paper-grain texture */
+.paper-grain {
+  position: relative;
+}
+.paper-grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Vinyl groove animation */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.spin-slow { animation: spin-slow 60s linear infinite; }
+
+/* Mono caps tag */
+.tag {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+/* Section padding */
+.section {
+  padding-block: clamp(5rem, 12vw, 11rem);
+  position: relative;
+}
+
+/* Editorial containers — varied widths create magazine rhythm */
+.container-tight {
+  max-width: 28rem;       /* most intimate beats */
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+.container-narrow {
+  max-width: 38rem;       /* essay column */
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+.container-mid {
+  max-width: 56rem;       /* breathing column */
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+.container-wide {
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+.container-edge {
+  max-width: 100%;
+  padding-inline: clamp(1.5rem, 5vw, 4rem);
+}
+
+/* Section vertical-rhythm modifiers */
+.section-tight { padding-block: clamp(3.5rem, 7vw, 6rem); }
+.section-loose { padding-block: clamp(7rem, 16vw, 14rem); }
+
+/* Beat blocks — editorial punctuation between sections.
+   Short, centred, deliberately under-filled — like a held breath. */
+.beat {
+  padding-block: clamp(3rem, 8vw, 6.5rem);
+  position: relative;
+  text-align: center;
+}
+.beat-word {              /* one word, huge */
+  font-size: clamp(3rem, 11vw, 9rem);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+.beat-line {              /* short fragment / sentence, big */
+  font-size: clamp(1.75rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.beat-rule {              /* hair-line accent above beat */
+  display: block;
+  width: 1px;
+  height: clamp(2rem, 5vw, 4rem);
+  background: currentColor;
+  opacity: 0.35;
+  margin: 0 auto clamp(1.5rem, 3vw, 2.5rem);
+  transform-origin: top center;
+}
+.beat-rule-anim {         /* draw-in animation on first appearance */
+  animation: beat-rule-draw 1.2s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+@keyframes beat-rule-draw {
+  0% { transform: scaleY(0); opacity: 0; }
+  100% { transform: scaleY(1); opacity: 0.35; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .beat-rule-anim { animation: none; }
+}
+
+/* Beat-block hover — entire beat slightly breathes when cursor is over the section.
+   Subtle: the giant italic word picks up scale + a tiny letter-spacing nudge. */
+.beat-hover {
+  cursor: pointer;
+}
+.beat-hover .beat-word,
+.beat-hover .beat-line {
+  display: inline-block;
+  transition:
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    letter-spacing 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: center;
+}
+.beat-hover:hover .beat-word {
+  transform: scale(1.04);
+  letter-spacing: -0.025em;
+}
+.beat-hover:hover .beat-line {
+  transform: scale(1.025);
+  letter-spacing: -0.022em;
+}
+@media (prefers-reduced-motion: reduce) {
+  .beat-hover .beat-word,
+  .beat-hover .beat-line {
+    transition: none;
+  }
+  .beat-hover:hover .beat-word,
+  .beat-hover:hover .beat-line {
+    transform: none;
+    letter-spacing: inherit;
+  }
+}
+
+/* Hero scratch-reveal — top desaturated layer is occluded everywhere except
+   a soft radial window around the cursor. The window position is driven by
+   --mx / --my variables set inline by the React component. */
+.hero-scratch-overlay {
+  -webkit-mask-image: radial-gradient(
+    circle var(--r, 220px) at var(--mx, -9999px) var(--my, -9999px),
+    transparent 0%,
+    transparent 55%,
+    rgba(0, 0, 0, 0.85) 90%,
+    black 100%
+  );
+  mask-image: radial-gradient(
+    circle var(--r, 220px) at var(--mx, -9999px) var(--my, -9999px),
+    transparent 0%,
+    transparent 55%,
+    rgba(0, 0, 0, 0.85) 90%,
+    black 100%
+  );
+  will-change: mask-image, -webkit-mask-image;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-scratch-overlay { display: none; }
+}
+
+/* Section corner labels (editorial mag style) */
+.corner-label {
+  position: absolute;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.65rem;
+  font-weight: 500;
+  opacity: 0.55;
+  z-index: 10;
+}
+.corner-label.tl { top: 1.5rem; left: 1.5rem; }
+.corner-label.tr { top: 1.5rem; right: 1.5rem; }
+.corner-label.bl { bottom: 1.5rem; left: 1.5rem; }
+.corner-label.br { bottom: 1.5rem; right: 1.5rem; }
+
+/* Display class for headlines */
+.display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+}
+.display-italic {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+}
+.display-bold {
+  font-family: var(--font-display-bold);
+  font-weight: 300;
+  line-height: 0.92;
+  letter-spacing: -0.025em;
+}
+
+/* Editorial body text */
+.body-serif {
+  font-family: var(--font-display);
+  font-weight: 400;
 }
