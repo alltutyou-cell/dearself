@@ -50,21 +50,12 @@ export default function Home() {
             my dear self · vol. 01
           </span>
 
-          {/* Top — handwritten signature + clarifier */}
+          {/* Top — clarifier */}
           <div className="md:pt-8">
             <FadeIn>
-              <p className="tag text-earth mb-4">vol. 01</p>
+              <p className="tag text-earth mb-6">vol. 01</p>
             </FadeIn>
             <FadeIn delay={0.05}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/logo-handwritten.png"
-                alt="my dear self"
-                className="block w-64 md:w-80 h-auto mb-6 -ml-2 select-none pointer-events-none"
-                draggable={false}
-              />
-            </FadeIn>
-            <FadeIn delay={0.1}>
               <p className="text-sm md:text-base text-ink-soft max-w-md leading-snug">
                 An AI-powered app that clones your voice and turns your future
                 self into someone you hear from every day.
