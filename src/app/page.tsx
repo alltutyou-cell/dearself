@@ -171,15 +171,16 @@ export default function Home() {
             <div className="md:col-start-5 md:col-span-7 space-y-7 text-base md:text-lg leading-relaxed text-bone/80">
               <FadeIn delay={0.1}>
                 <p>
-                  You have the vision. The apartment with the morning light. The
-                  work that finally feels like yours. The version of Saturday
-                  you&apos;ve been writing toward. You&apos;ve drawn it.
-                  You&apos;ve journaled toward her. You&apos;ve made the boards.
+                  You have the vision. The apartment with the morning
+                  light…the work that finally feels like yours… the version of
+                  Saturday you&apos;ve been writing toward. You&apos;ve drawn
+                  it, you&apos;ve journaled toward her or you&apos;ve made the
+                  boards.
                 </p>
               </FadeIn>
               <FadeIn delay={0.2}>
                 <p>
-                  And every day, something pulls you off course — the
+                  And every day, something pulls you off course: the
                   comparison, the doubt, the voice in your head that won&apos;t
                   stop weighing you against everyone else, that says you&apos;re
                   behind, that whispers maybe this isn&apos;t going to work for
@@ -214,9 +215,9 @@ export default function Home() {
               </FadeIn>
               <FadeIn delay={0.6}>
                 <p>
-                  That&apos;s not a willpower problem. The voice in the room has
-                  been running unopposed for thirty-something years, and no one
-                  ever thought to put another voice in the room with it.
+                  The voice in the room has been running unopposed for
+                  thirty-something years, and no one ever thought to put
+                  another voice in the room with it.
                 </p>
               </FadeIn>
               <FadeIn delay={0.7}>
@@ -224,7 +225,7 @@ export default function Home() {
                   className="display-italic text-bone leading-snug pt-6"
                   style={{ fontSize: "var(--text-display-md)" }}
                 >
-                  You didn&apos;t fail the work. The work was missing a piece.
+                  You didn&apos;t fail the work, but the work was missing a piece.
                 </p>
               </FadeIn>
             </div>
@@ -248,16 +249,16 @@ export default function Home() {
           <div className="mt-12 space-y-7 text-base md:text-lg leading-relaxed text-ink-soft">
             <FadeIn delay={0.1}>
               <p>
-                Not the fixed version of you. Not the further-along version.
-                The you that already exists, the one who speaks to the people
-                she loves with patience and generosity and the kind of
-                steadiness she has never once turned inward.
+                Not the fixed version of you, but the you that already exists,
+                the one who speaks to the people she loves with patience and
+                generosity and the kind of steadiness she has never once
+                turned inward.
               </p>
             </FadeIn>
             <FadeIn delay={0.2}>
               <p>
-                That voice exists. You use it every day. You haven&apos;t been
-                on the receiving end of it.
+                That voice exists and you use it every day… but you
+                haven&apos;t been on the receiving end of it.
               </p>
             </FadeIn>
             <FadeIn delay={0.3}>
@@ -320,14 +321,14 @@ export default function Home() {
           <div className="mt-20 max-w-2xl mx-auto space-y-7 text-base md:text-lg leading-relaxed text-ink-soft">
             <FadeIn delay={0.1}>
               <p>
-                You&apos;ve made the boards. Cut the magazines. Pinned the
+                You&apos;ve made the boards, cut the magazines… Pinned the
                 apartment, the partner, the place you&apos;re going. You&apos;ve
                 stared at them, felt into them, tried to call them in.
               </p>
             </FadeIn>
             <FadeIn delay={0.2}>
               <p>
-                The boards are silent. They don&apos;t say your name. They
+                The boards are silent. They don&apos;t say your name and they
                 don&apos;t tell you that the morning has already arrived,
                 somewhere, in some version of you who&apos;s already living it.
               </p>
@@ -343,8 +344,8 @@ export default function Home() {
             </FadeIn>
             <FadeIn delay={0.4}>
               <p>
-                Not a picture you look at. A voice you hear. Speaking back to
-                you about the specific life on the board, as if it&apos;s
+                Not a picture you look at, but a voice you hear. Speaking
+                back to you about the specific life on the board, as if it&apos;s
                 already happening, in the only voice your subconscious has ever
                 trusted: the one that finally talks to you the way you talk to
                 everyone else.
@@ -481,7 +482,7 @@ export default function Home() {
                 className="display-italic text-ink leading-snug pt-4"
                 style={{ fontSize: "var(--text-display-md)" }}
               >
-                You weren&apos;t failing to believe hard enough. The
+                You weren&apos;t failing to believe hard enough, but the
                 architecture was wrong.
               </p>
             </FadeIn>
@@ -545,8 +546,7 @@ export default function Home() {
                 You speak your future into the app — your apartment, your work,
                 your people, the version of Saturday you&apos;re working
                 toward. The same recording captures your voice. Then AI builds
-                five personalized tracks, in your voice, about your specific
-                life.
+                personalized tracks, in your voice, about your specific life.
               </p>
             </FadeIn>
           </div>
@@ -972,8 +972,7 @@ export default function Home() {
                   <p>
                     Sixty seconds. You, talking normally, in a quiet room.
                     The model trains on that sample. Your five tracks come
-                    back inside 24 hours, in your voice, about your specific
-                    life.
+                    back in your voice, about your specific life.
                   </p>
                   <p>
                     Not ready to record yet? Pick from six pre-made voices
