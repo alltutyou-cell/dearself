@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Caveat } from "next/font/google";
 import "./globals.css";
+
+const caveat = Caveat({
+  variable: "--font-caveat",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+});
 import { CursorFollower } from "@/components/CursorFollower";
 import { LetterboxIntro } from "@/components/LetterboxIntro";
 import { AmbientToggle } from "@/components/AmbientToggle";
@@ -134,7 +142,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${arsenica.variable} ${gagen.variable} ${schrifted.variable} ${schriftedSubhead.variable} ${alugfte.variable} ${nordstove.variable} ${machina.variable} ${fliege.variable} ${magnat.variable} ${craftwork.variable} h-full antialiased`}
+      className={`${arsenica.variable} ${gagen.variable} ${schrifted.variable} ${schriftedSubhead.variable} ${alugfte.variable} ${nordstove.variable} ${machina.variable} ${fliege.variable} ${magnat.variable} ${craftwork.variable} ${caveat.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-bone text-ink">
         {children}

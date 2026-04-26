@@ -251,3 +251,10 @@ body {
   font-family: var(--font-display);
   font-weight: 400;
 }
+
+/* Handwritten wordmark — Caveat-style "note on kitchen counter" energy */
+.handwritten {
+  font-family: var(--font-caveat), var(--font-display), cursive;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}

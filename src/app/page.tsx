@@ -36,7 +36,7 @@ export default function Home() {
 
       {/* HEADER */}
       <header className="container-wide flex items-center justify-between pt-8 pb-4">
-        <span className="display-italic text-2xl md:text-3xl text-earth">my dear self</span>
+        <span className="handwritten text-3xl md:text-4xl text-earth leading-none">my dear self</span>
         <span className="tag text-ink/60 hidden sm:block">
           Future-self audio ritual
         </span>
@@ -1234,7 +1234,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="border-t border-ink/15 py-10 pb-24 md:pb-10">
         <div className="container-wide flex flex-col md:flex-row items-center justify-between gap-4">
-          <span className="display-italic text-xl text-earth">my dear self</span>
+          <span className="handwritten text-2xl text-earth leading-none">my dear self</span>
           <p className="tag text-ink/50 text-center md:text-right">
             iOS &amp; web · founding-member onboarding within 24 hours · 30-day
             refund
