@@ -1,5 +1,4 @@
 import { FadeIn } from "@/components/FadeIn";
-import { Vinyl } from "@/components/Vinyl";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { StickyMobileCTA } from "@/components/StickyMobileCTA";
 import { RevealText } from "@/components/RevealText";
@@ -124,12 +123,6 @@ export default function Home() {
           <span className="corner-label tr text-bone z-10 hidden md:block pointer-events-none">
             Founding member · 100 seats
           </span>
-          <div
-            className="absolute bottom-6 right-6 md:bottom-8 md:right-8 opacity-70 hidden md:block z-10"
-            data-cursor-label="press play"
-          >
-            <Vinyl size={90} spin />
-          </div>
         </div>
       </section>
 
