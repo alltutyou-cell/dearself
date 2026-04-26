@@ -103,7 +103,7 @@ export function LetterboxIntro() {
                 className="tag text-bone/65"
                 style={{ letterSpacing: "0.32em" }}
               >
-                Dear Self · Vol. 01
+                my dear self · vol. 01
               </span>
             </motion.div>
           ) : null}

@@ -115,7 +115,7 @@ const craftwork = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Dear Self — Letters from your future self, spoken in your own voice",
+  title: "my dear self — Letters from your future self, spoken in your own voice",
   description:
     "An app that uses AI to clone your voice and build a personalized affirmation library plus a future-self letter writer. Trained on the specific life you describe.",
   icons: {

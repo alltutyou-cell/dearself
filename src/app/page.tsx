@@ -9,7 +9,7 @@ import { PortraitReveal } from "@/components/PortraitReveal";
 import { ChapterIndex } from "@/components/ChapterIndex";
 
 const CHAPTERS = [
-  { id: "hero", num: "01", label: "Vol. 01" },
+  { id: "hero", num: "01", label: "vol. 01" },
   { id: "wound", num: "02", label: "The wound" },
   { id: "missing", num: "03", label: "Missing piece" },
   { id: "bridge", num: "04", label: "Vision → voice" },
@@ -36,7 +36,7 @@ export default function Home() {
 
       {/* HEADER */}
       <header className="container-wide flex items-center justify-between pt-8 pb-4">
-        <span className="display-italic text-2xl md:text-3xl">Dear Self</span>
+        <span className="display-italic text-2xl md:text-3xl text-earth">my dear self</span>
         <span className="tag text-ink/60 hidden sm:block">
           Future-self audio ritual
         </span>
@@ -47,13 +47,13 @@ export default function Home() {
         {/* LEFT: text panel on bone */}
         <div className="md:col-span-6 bg-bone paper-grain relative flex flex-col justify-between px-6 md:px-12 lg:px-16 py-12 md:py-14 order-2 md:order-1">
           <span className="corner-label tl text-ink hidden md:block">
-            Dear Self · Vol. 01
+            my dear self · vol. 01
           </span>
 
           {/* Top — clarifier */}
           <div className="md:pt-8">
             <FadeIn>
-              <p className="tag text-earth mb-6">Dear Self · Vol. 01</p>
+              <p className="tag text-earth mb-6">my dear self · vol. 01</p>
             </FadeIn>
             <FadeIn delay={0.05}>
               <p className="text-sm md:text-base text-ink-soft max-w-md leading-snug">
@@ -92,7 +92,7 @@ export default function Home() {
                 <AudioPlayer
                   src={SAMPLE_AUDIO_SRC}
                   label="Listen · 30-sec sample"
-                  caption="Vol. 01"
+                  caption="vol. 01"
                   variant="light"
                 />
               </div>
@@ -281,7 +281,7 @@ export default function Home() {
                 className="display-italic text-ink leading-snug"
                 style={{ fontSize: "var(--text-display-sm)" }}
               >
-                Dear Self puts you there.
+                my dear self puts you there.
               </p>
             </FadeIn>
             <FadeIn delay={0.5}>
@@ -344,7 +344,7 @@ export default function Home() {
                 className="display-italic text-ink leading-snug pt-4"
                 style={{ fontSize: "var(--text-display-md)" }}
               >
-                Dear Self gives the future you&apos;ve been imagining a voice.
+                my dear self gives the future you&apos;ve been imagining a voice.
                 Yours.
               </p>
             </FadeIn>
@@ -413,7 +413,7 @@ export default function Home() {
               </FadeIn>
               <FadeIn delay={0.5}>
                 <p>
-                  Dear Self changes what wakes you up. Not the alarm sound, not
+                  my dear self changes what wakes you up. Not the alarm sound, not
                   a meditation prompt, your own voice, the version of you who
                   already made it, speaking to you before the world gets a
                   chance to.
@@ -543,7 +543,7 @@ export default function Home() {
             </FadeIn>
             <FadeIn delay={0.1}>
               <p className="mt-10 text-base md:text-lg leading-relaxed text-ink-soft">
-                Dear Self is an iOS and web app that uses AI to clone your voice
+                my dear self is an iOS and web app that uses AI to clone your voice
                 and build a personalized affirmation library, trained on the
                 specific life you describe.
               </p>
@@ -608,7 +608,7 @@ export default function Home() {
                 <AudioPlayer
                   src={SAMPLE_AUDIO_SRC}
                   label=""
-                  caption="Vol. 01 · pre-launch sample"
+                  caption="vol. 01 · pre-launch sample"
                   variant="light"
                 />
                 <p className="tag text-ink/45 mt-4 text-center">
@@ -751,41 +751,41 @@ export default function Home() {
                   className="display-italic text-balance text-bone"
                   style={{ fontSize: "var(--text-display-lg)" }}
                 >
-                  What Dear Self will not do.
+                  What my dear self will not do.
                 </h2>
               </FadeIn>
             </div>
             <div className="md:col-span-7 space-y-8 text-base md:text-lg leading-relaxed text-bone/80">
               <FadeIn delay={0.1}>
                 <p>
-                  Dear Self will not make you a millionaire by Friday. Anyone
+                  my dear self will not make you a millionaire by Friday. Anyone
                   who promises that is selling a feeling, not a process.
                 </p>
               </FadeIn>
               <FadeIn delay={0.2}>
                 <p>
-                  Dear Self will not do the becoming for you. The tool is
+                  my dear self will not do the becoming for you. The tool is
                   yours. The work is yours. The voice is yours. We&apos;re
                   making sure it&apos;s loud enough to hear.
                 </p>
               </FadeIn>
               <FadeIn delay={0.3}>
                 <p>
-                  Dear Self will not feel like magic. It will feel like your
+                  my dear self will not feel like magic. It will feel like your
                   own voice, which is stranger and more powerful than magic,
                   and considerably more honest.
                 </p>
               </FadeIn>
               <FadeIn delay={0.4}>
                 <p>
-                  Dear Self will not fix the gap between who you are and who
+                  my dear self will not fix the gap between who you are and who
                   you&apos;re becoming. It will change your relationship to
                   that gap. Which is the only thing that has ever closed one.
                 </p>
               </FadeIn>
               <FadeIn delay={0.5}>
                 <p>
-                  Dear Self is not a replacement for therapy. If you&apos;re
+                  my dear self is not a replacement for therapy. If you&apos;re
                   dealing with something serious, please go talk to a human.
                 </p>
               </FadeIn>
@@ -806,10 +806,10 @@ export default function Home() {
                 <div className="md:sticky md:top-24">
                   <PortraitReveal
                     src="/images/julia.jpg"
-                    alt="Julia, founder of Dear Self"
+                    alt="Julia, founder of my dear self"
                     signature="— Julia"
                   />
-                  <p className="tag text-earth mt-4">Julia · founder, Dear Self</p>
+                  <p className="tag text-earth mt-4">Julia · founder, my dear self</p>
                 </div>
               </FadeIn>
             </div>
@@ -897,7 +897,7 @@ export default function Home() {
               </FadeIn>
               <FadeIn delay={1.0}>
                 <p>
-                  Dear Self is the tool I wished existed. I&apos;m building it
+                  my dear self is the tool I wished existed. I&apos;m building it
                   for the women who know what they want. The ones who need a
                   voice that reminds them it&apos;s theirs.
                 </p>
@@ -1039,7 +1039,7 @@ export default function Home() {
             <div className="md:col-span-4 md:pb-4">
               <FadeIn delay={0.1}>
                 <p className="text-base md:text-lg leading-relaxed text-ink-soft">
-                  After these seats are gone, Dear Self will be $19.99/month,
+                  After these seats are gone, my dear self will be $19.99/month,
                   $149/year, or $497 for a fully done-for-you setup. The
                   founding-member tier will not return.
                 </p>
@@ -1082,7 +1082,7 @@ export default function Home() {
             <FadeIn delay={0.3}>
               <div className="mt-12 text-center space-y-4">
                 <p className="text-sm text-ink-soft">
-                  After the 100 founding spots are gone, Dear Self goes to
+                  After the 100 founding spots are gone, my dear self goes to
                   <span className="text-ink"> $19.99/month </span>
                   ({" "}
                   <span className="text-ink">$240/year</span>
@@ -1234,7 +1234,7 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="border-t border-ink/15 py-10 pb-24 md:pb-10">
         <div className="container-wide flex flex-col md:flex-row items-center justify-between gap-4">
-          <span className="display-italic text-xl">Dear Self</span>
+          <span className="display-italic text-xl text-earth">my dear self</span>
           <p className="tag text-ink/50 text-center md:text-right">
             iOS &amp; web · founding-member onboarding within 24 hours · 30-day
             refund
