@@ -379,11 +379,10 @@ export default function Home() {
               </FadeIn>
               <FadeIn delay={0.2}>
                 <p>
-                  Alarm goes off, phone in hand before your feet hit the floor —
-                  Instagram, email, someone else&apos;s engagement and promotion
-                  and apartment. By the time you stand up, you&apos;ve already
-                  compared your insides to someone else&apos;s outside thirty
-                  times.
+                  The first voice in your head was almost never yours. Email,
+                  the news, a feed, the worry already waiting — by the time you
+                  stand up, you&apos;ve taken in a dozen voices, none of them
+                  you.
                 </p>
               </FadeIn>
               <FadeIn delay={0.3}>
