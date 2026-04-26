@@ -179,11 +179,11 @@ export default function Home() {
               </FadeIn>
               <FadeIn delay={0.2}>
                 <p>
-                  And every day, something pulls you off course. Comparison.
-                  Doubt. The voice in your head that won&apos;t stop weighing
-                  you against everyone else, that says you&apos;re behind, that
-                  whispers maybe this isn&apos;t going to work for you
-                  specifically.
+                  And every day, something pulls you off course — the
+                  comparison, the doubt, the voice in your head that won&apos;t
+                  stop weighing you against everyone else, that says you&apos;re
+                  behind, that whispers maybe this isn&apos;t going to work for
+                  you specifically.
                 </p>
               </FadeIn>
               <FadeIn delay={0.3}>
@@ -279,7 +279,7 @@ export default function Home() {
             </FadeIn>
             <FadeIn delay={0.5}>
               <p className="pt-6 text-base md:text-lg text-ink-soft italic">
-                And here&apos;s where she actually arrives.
+                And here&apos;s where she arrives.
               </p>
             </FadeIn>
           </div>
@@ -379,11 +379,11 @@ export default function Home() {
               </FadeIn>
               <FadeIn delay={0.2}>
                 <p>
-                  Alarm goes off. Phone in hand before your feet hit the floor.
-                  Instagram. Email. Someone else&apos;s engagement, someone
-                  else&apos;s promotion, someone else&apos;s apartment. By the
-                  time you stand up, you&apos;ve already compared your insides
-                  to someone else&apos;s outside thirty times.
+                  Alarm goes off, phone in hand before your feet hit the floor —
+                  Instagram, email, someone else&apos;s engagement and promotion
+                  and apartment. By the time you stand up, you&apos;ve already
+                  compared your insides to someone else&apos;s outside thirty
+                  times.
                 </p>
               </FadeIn>
               <FadeIn delay={0.3}>
@@ -560,7 +560,7 @@ export default function Home() {
                   className="display-italic leading-tight"
                   style={{ fontSize: "var(--text-display-md)" }}
                 >
-                  Specific. Spoken. Already true.
+                  Specific, spoken, already true.
                 </h3>
                 <p className="mt-6 text-base leading-relaxed text-ink-soft">
                   Five personalized tracks. Spoken in your voice. Specific
@@ -967,7 +967,7 @@ export default function Home() {
               <div>
                 <p className="tag text-earth mb-3">02 · The practical one</p>
                 <h3 className="display-italic text-ink leading-snug text-lg md:text-xl">
-                  How does the voice clone actually work?
+                  How does the voice clone work?
                 </h3>
                 <div className="mt-4 space-y-3 text-sm md:text-base leading-relaxed text-ink-soft">
                   <p>
@@ -1169,9 +1169,9 @@ export default function Home() {
                 <div className="space-y-7 text-base md:text-lg leading-relaxed text-ink-soft text-balance">
                   <p>Imagine tomorrow morning.</p>
                   <p>
-                    Early. The light is still soft. You haven&apos;t checked
-                    your phone yet, not email, not Instagram, not anything
-                    that belongs to someone else&apos;s world.
+                    It&apos;s early, the light still soft. You haven&apos;t
+                    checked your phone yet — not email, not Instagram, not
+                    anything that belongs to someone else&apos;s world.
                   </p>
                   <p>
                     You don&apos;t reach for it. The audio starts on its own.
