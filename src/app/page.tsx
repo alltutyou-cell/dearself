@@ -554,7 +554,7 @@ export default function Home() {
                 your people, the version of Saturday you&apos;re working
                 toward. The same recording captures your voice. Then AI builds
                 five personalized tracks, in your voice, about your specific
-                life. Within 24 hours, they&apos;re ready.
+                life.
               </p>
             </FadeIn>
           </div>
