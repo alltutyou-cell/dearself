@@ -611,9 +611,6 @@ export default function Home() {
                   caption="vol. 01 · pre-launch sample"
                   variant="light"
                 />
-                <p className="tag text-ink/45 mt-4 text-center">
-                  Yours arrives within 24 hours of onboarding
-                </p>
               </div>
             </FadeIn>
           </div>
