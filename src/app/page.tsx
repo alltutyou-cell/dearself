@@ -1073,10 +1073,10 @@ export default function Home() {
                 <p className="text-sm text-ink-soft">
                   After the 100 founding spots are gone, my dear self goes to
                   <span className="text-ink"> $9.99/month </span>
-                  ({" "}
-                  <span className="text-ink">$120/year</span>
-                  {" "}) or
-                  <span className="text-ink"> $199 done-for-you</span>.
+                  or
+                  <span className="text-ink"> $69/year</span>, with{" "}
+                  <span className="text-ink">$199 done-for-you</span> available
+                  separately.
                 </p>
                 <p
                   className="display-italic text-ink leading-snug pt-6"
