@@ -106,7 +106,7 @@ export default function Home() {
                     Claim founding spot · $97
                   </MagneticLink>
                 </span>
-                <p className="tag text-ink/50">
+                <p className="tag text-ink/70">
                   Lifetime · 100 seats · 30-day refund
                 </p>
               </div>
@@ -168,7 +168,7 @@ export default function Home() {
           </div>
 
           <div className="mt-20 grid md:grid-cols-12 gap-8">
-            <div className="md:col-start-5 md:col-span-7 space-y-7 text-base md:text-lg leading-relaxed text-bone/80">
+            <div className="md:col-start-5 md:col-span-7 space-y-7 text-lg md:text-xl leading-relaxed text-bone/90">
               <FadeIn delay={0.1}>
                 <p>
                   You have the vision. The apartment with the morning
@@ -189,7 +189,7 @@ export default function Home() {
               </FadeIn>
               <FadeIn delay={0.3}>
                 <p
-                  className="display-italic text-bone leading-snug pt-2"
+                  className="display-italic text-bone leading-snug pt-6"
                   style={{ fontSize: "var(--text-display-md)" }}
                 >
                   And underneath all of it, the question you&apos;ve never said
@@ -214,7 +214,10 @@ export default function Home() {
                 </p>
               </FadeIn>
               <FadeIn delay={0.6}>
-                <p>
+                <p
+                  className="display-italic text-bone leading-snug pt-6"
+                  style={{ fontSize: "var(--text-display-sm)" }}
+                >
                   The voice in the room has been running unopposed for
                   thirty-something years, and no one ever thought to put
                   another voice in the room with it.
@@ -374,7 +377,7 @@ export default function Home() {
           </div>
 
           <div className="mt-16 grid md:grid-cols-12 gap-8">
-            <div className="md:col-span-5 space-y-7 text-base md:text-lg leading-relaxed text-bone/80">
+            <div className="md:col-span-5 space-y-7 text-base md:text-lg leading-relaxed text-bone/90">
               <FadeIn delay={0.1}>
                 <p>Think about the last 30 mornings.</p>
               </FadeIn>
@@ -394,7 +397,7 @@ export default function Home() {
               </FadeIn>
             </div>
 
-            <div className="md:col-start-8 md:col-span-5 space-y-7 text-base md:text-lg leading-relaxed text-bone/80">
+            <div className="md:col-start-8 md:col-span-5 space-y-7 text-base md:text-lg leading-relaxed text-bone/90">
               <FadeIn delay={0.4}>
                 <p
                   className="display-italic text-bone leading-snug"
@@ -413,7 +416,7 @@ export default function Home() {
                 </p>
               </FadeIn>
               <FadeIn delay={0.6}>
-                <p className="pt-6 text-base md:text-lg text-bone/70 italic">
+                <p className="pt-6 text-base md:text-lg text-bone/90 italic">
                   And what you&apos;re doing here isn&apos;t superstition.
                   It&apos;s how the brain works.
                 </p>
@@ -745,7 +748,7 @@ export default function Home() {
                 </h2>
               </FadeIn>
             </div>
-            <div className="md:col-span-7 space-y-8 text-base md:text-lg leading-relaxed text-bone/80">
+            <div className="md:col-span-7 space-y-8 text-base md:text-lg leading-relaxed text-bone/90">
               <FadeIn delay={0.1}>
                 <p>
                   my dear self will not make you a millionaire by Friday. Anyone
@@ -817,7 +820,7 @@ export default function Home() {
 
               <div className="mt-12 space-y-7 text-base md:text-lg leading-relaxed text-ink-soft">
               <FadeIn delay={0.1}>
-                <p>
+                <p className="drop-cap">
                   A few months ago I watched a friend buy herself flowers. She
                   picked out the prettiest ones. She said, out loud,{" "}
                   <em className="text-ink">
@@ -854,7 +857,7 @@ export default function Home() {
               </FadeIn>
               <FadeIn delay={0.6}>
                 <p
-                  className="display-italic text-ink leading-snug pt-2"
+                  className="display-italic text-ink leading-snug pt-6"
                   style={{ fontSize: "var(--text-display-sm)" }}
                 >
                   In my own voice, so I&apos;d believe it.
@@ -877,7 +880,7 @@ export default function Home() {
               </FadeIn>
               <FadeIn delay={0.9}>
                 <p
-                  className="display-italic text-ink leading-snug pt-2"
+                  className="display-italic text-ink leading-snug pt-6"
                   style={{ fontSize: "var(--text-display-sm)" }}
                 >
                   I want to live a life where, when I&apos;m old, I look back
@@ -942,7 +945,7 @@ export default function Home() {
                 <h3 className="display-italic text-ink leading-snug text-lg md:text-xl">
                   What if I hear my own voice and feel worse?
                 </h3>
-                <div className="mt-4 space-y-3 text-sm md:text-base leading-relaxed text-ink-soft">
+                <div className="mt-4 space-y-3 text-base md:text-lg leading-relaxed text-ink-soft">
                   <p>
                     Hearing your own voice say things you haven&apos;t let
                     yourself believe yet can feel strange at first. Sometimes
@@ -969,7 +972,7 @@ export default function Home() {
                 <h3 className="display-italic text-ink leading-snug text-lg md:text-xl">
                   How does the voice clone work?
                 </h3>
-                <div className="mt-4 space-y-3 text-sm md:text-base leading-relaxed text-ink-soft">
+                <div className="mt-4 space-y-3 text-base md:text-lg leading-relaxed text-ink-soft">
                   <p>
                     Sixty seconds. You, talking normally, in a quiet room.
                     The model trains on that sample. Your five tracks come
@@ -989,7 +992,7 @@ export default function Home() {
                 <h3 className="display-italic text-ink leading-snug text-lg md:text-xl">
                   What about my voice data?
                 </h3>
-                <div className="mt-4 space-y-3 text-sm md:text-base leading-relaxed text-ink-soft">
+                <div className="mt-4 space-y-3 text-base md:text-lg leading-relaxed text-ink-soft">
                   <p>
                     Enterprise privacy terms. Not shared, not sold, not used
                     to train any public model. Delete your voice and all
@@ -1079,7 +1082,7 @@ export default function Home() {
                   <span className="text-ink"> $497 done-for-you</span>.
                 </p>
                 <p
-                  className="display-italic text-ink leading-snug pt-2"
+                  className="display-italic text-ink leading-snug pt-6"
                   style={{ fontSize: "var(--text-display-sm)" }}
                 >
                   You&apos;re getting lifetime access for less than two months
@@ -1112,7 +1115,7 @@ export default function Home() {
                   I&apos;m ready · claim founding spot
                 </MagneticLink>
               </span>
-              <p className="tag text-ink/50">
+              <p className="tag text-ink/70">
                 $97 · 30-day refund · 100 seats
               </p>
             </div>
@@ -1145,7 +1148,7 @@ export default function Home() {
                     <h3 className="display-italic text-bone leading-snug text-xl md:text-2xl">
                       {faq.q}
                     </h3>
-                    <div className="mt-5 space-y-4 text-sm md:text-base leading-relaxed text-bone/80">
+                    <div className="mt-5 space-y-4 text-base md:text-lg leading-relaxed text-bone/90">
                       {faq.a.map((para, j) => (
                         <p key={j}>{para}</p>
                       ))}
@@ -1223,7 +1226,7 @@ export default function Home() {
                       Claim founding spot · $97
                     </MagneticLink>
                   </span>
-                  <p className="tag text-ink/50 self-end pb-2">
+                  <p className="tag text-ink/70 self-end pb-2">
                     100 seats · once they&apos;re gone, they&apos;re gone
                   </p>
                 </div>
@@ -1237,7 +1240,7 @@ export default function Home() {
       <footer className="border-t border-ink/15 py-10 pb-24 md:pb-10">
         <div className="container-wide flex flex-col md:flex-row items-center justify-between gap-4">
           <span className="handwritten text-2xl text-earth leading-none">my dear self</span>
-          <p className="tag text-ink/50 text-center md:text-right">
+          <p className="tag text-ink/70 text-center md:text-right">
             iOS &amp; web · founding-member onboarding within 24 hours · 30-day
             refund
           </p>
