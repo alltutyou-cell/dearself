@@ -23,7 +23,7 @@ export function StickyMobileCTA() {
     >
       <div className="bg-ink/95 backdrop-blur-sm border-t border-bone/10 px-4 py-3 flex items-center justify-between gap-3">
         <div className="min-w-0">
-          <p className="tag text-bone/60 leading-tight">100 seats · $39</p>
+          <p className="tag text-bone/60 leading-tight">100 seats · $59</p>
           <p className="text-bone text-sm leading-tight truncate">
             Lifetime · 30-day refund
           </p>
