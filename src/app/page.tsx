@@ -817,7 +817,7 @@ export default function Home() {
 
               <div className="mt-12 space-y-7 text-base md:text-lg leading-relaxed text-ink-soft">
               <FadeIn delay={0.1}>
-                <p className="drop-cap">
+                <p>
                   A few months ago I watched a friend buy herself flowers. She
                   picked out the prettiest ones. She said, out loud,{" "}
                   <em className="text-ink">

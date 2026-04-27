@@ -259,14 +259,3 @@ body {
   letter-spacing: -0.005em;
 }
 
-/* Drop-cap — for founder-note opening, magazine feel */
-.drop-cap::first-letter {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-weight: 400;
-  font-size: 4.5em;
-  line-height: 0.9;
-  float: left;
-  margin: 0.05em 0.12em 0 0;
-  color: var(--color-earth);
-}
