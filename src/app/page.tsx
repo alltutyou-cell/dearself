@@ -103,7 +103,7 @@ export default function Home() {
                     href="#offer"
                     className="inline-block bg-ink text-bone px-10 py-5 text-sm tracking-[0.2em] uppercase hover:bg-earth transition-colors duration-500"
                   >
-                    Claim founding spot · $97
+                    Claim founding spot · $39
                   </MagneticLink>
                 </span>
                 <p className="tag text-ink/70">
@@ -1011,7 +1011,7 @@ export default function Home() {
       {/* OFFER — bone, single editorial column */}
       <section id="offer" className="section bg-bone paper-grain">
         <span className="corner-label tl text-ink">№ 12 · Founding member</span>
-        <span className="corner-label tr text-ink">100 seats · $97</span>
+        <span className="corner-label tr text-ink">100 seats · $39</span>
         <div className="container-wide">
           {/* H1 + intro — top */}
           <div className="grid md:grid-cols-12 gap-8 items-end">
@@ -1021,16 +1021,15 @@ export default function Home() {
                   className="display-italic text-balance"
                   style={{ fontSize: "var(--text-display-xl)" }}
                 >
-                  100 seats. $97. Lifetime.
+                  100 seats. $39. Lifetime.
                 </h2>
               </FadeIn>
             </div>
             <div className="md:col-span-4 md:pb-4">
               <FadeIn delay={0.1}>
                 <p className="text-base md:text-lg leading-relaxed text-ink-soft">
-                  After these seats are gone, my dear self will be $19.99/month,
-                  $149/year, or $497 for a fully done-for-you setup. The
-                  founding-member tier will not return.
+                  After these seats are gone, my dear self will be $4.99/month
+                  or $39/year. The founding-member tier will not return.
                 </p>
               </FadeIn>
             </div>
@@ -1072,18 +1071,15 @@ export default function Home() {
               <div className="mt-12 text-center space-y-4">
                 <p className="text-sm text-ink-soft">
                   After the 100 founding spots are gone, my dear self goes to
-                  <span className="text-ink"> $19.99/month </span>
-                  ({" "}
-                  <span className="text-ink">$240/year</span>
-                  {" "}) or
-                  <span className="text-ink"> $497 done-for-you</span>.
+                  <span className="text-ink"> $4.99/month </span>
+                  or
+                  <span className="text-ink"> $39/year</span>.
                 </p>
                 <p
                   className="display-italic text-ink leading-snug pt-6"
                   style={{ fontSize: "var(--text-display-sm)" }}
                 >
-                  You&apos;re getting lifetime access for less than two months
-                  of the regular plan.
+                  Lifetime access for the price of a single year.
                 </p>
               </div>
             </FadeIn>
@@ -1113,7 +1109,7 @@ export default function Home() {
                 </MagneticLink>
               </span>
               <p className="tag text-ink/70">
-                $97 · 30-day refund · 100 seats
+                $39 · 30-day refund · 100 seats
               </p>
             </div>
           </FadeIn>
@@ -1220,7 +1216,7 @@ export default function Home() {
                       pull={16}
                       className="inline-block bg-ink text-bone px-12 py-6 text-sm tracking-[0.18em] uppercase hover:bg-earth transition-colors duration-500"
                     >
-                      Claim founding spot · $97
+                      Claim founding spot · $39
                     </MagneticLink>
                   </span>
                   <p className="tag text-ink/70 self-end pb-2">
