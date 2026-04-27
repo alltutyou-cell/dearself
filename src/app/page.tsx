@@ -56,8 +56,8 @@ export default function Home() {
             </FadeIn>
             <FadeIn delay={0.05}>
               <p className="text-sm md:text-base text-ink-soft max-w-md leading-snug">
-                An AI-powered app that clones your voice and turns your future
-                self into someone you hear from every day.
+                An app that learns your voice, your dreams, your story… and
+                helps you write the letters you need to hear. Every morning.
               </p>
             </FadeIn>
           </div>
@@ -536,9 +536,10 @@ export default function Home() {
             </FadeIn>
             <FadeIn delay={0.1}>
               <p className="mt-10 text-base md:text-lg leading-relaxed text-ink-soft">
-                my dear self is an iOS and web app that uses AI to clone your voice
-                and build a personalized affirmation library, trained on the
-                specific life you describe.
+                my dear self uses voice cloning to capture the way you speak.
+                Then it writes you a personalized library of letters, trained
+                on your goals and your life. Every track sounds like it came
+                from you, because it did.
               </p>
             </FadeIn>
             <FadeIn delay={0.2}>
