@@ -214,10 +214,7 @@ export default function Home() {
                 </p>
               </FadeIn>
               <FadeIn delay={0.6}>
-                <p
-                  className="display-italic text-bone leading-snug pt-6"
-                  style={{ fontSize: "var(--text-display-sm)" }}
-                >
+                <p>
                   The voice in the room has been running unopposed for
                   thirty-something years, and no one ever thought to put
                   another voice in the room with it.
